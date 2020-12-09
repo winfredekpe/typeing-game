@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.box {
+  width: 80%;
+  height: 80%;
+  background: black;
+  border-radius: 3rem;
+  overflow: hidden;
+  box-shadow: 1px 1px 8px 1px rgba(7, 185, 117, 0.849);
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.top {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  background: rgba(7, 185, 117, 0.849);
+  padding-top: 1rem;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+  padding: 10px;
+  border: 2px solid rgba(7, 185, 117, 0.849);
+  border-radius: 1rem;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.timer {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 10px;
+  border: 2px solid rgba(7, 185, 117, 0.849);
+  margin-left: 2rem;
+  border-radius: 2rem;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  align-items: center;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+input {
+  padding: 16px;
+  margin-right: 2rem;
+  width: 15rem;
+  border-radius: 1.4rem;
+  outline: none;
+  font-size: 1.3rem;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.btn {
+  border: 2px solid rgba(7, 185, 117, 0.849);
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.score {
+  text-align: center;
+  margin-top: 2rem;
+  border: 2px solid rgba(7, 185, 117, 0.849);
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 5px;
+  background: rgba(7, 185, 117, 0.849);
+  border-left: none;
+  border-right: none;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 60%;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.instruction {
+  margin-top: 2rem;
+  text-align: center;
+  background: rgba(7, 185, 117, 0.849);
+  border-left: none;
+  border-right: none;
+  padding: 3px;
+  padding-top: 1rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 70%;
+  height: 100%;
+}
+
+.pop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -1rem;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.poping {
+  display: none;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 1rem;
+  background: rgba(7, 185, 117, 0.849);
+  padding: 1rem;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.instructions,
+.scores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@media (max-width: 811px) {
+  .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .btn {
+    margin-top: 1rem;
+  }
+}
